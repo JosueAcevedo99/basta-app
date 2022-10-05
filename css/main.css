@@ -1,0 +1,53 @@
+
+a{
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+    margin-left: 0.2rem !important;
+}
+
+
+.roundedcard{
+    border-radius: 25px;
+}
+
+.tamanio-1{
+    font-size: 50px;
+}
+
+.tamanio-2{
+    font-size: 90px;
+}
+
+
+
+
+
+
+/* 
+/* small queries */
+/*
+@media (max-width: 576px) {
+    
+
+    .btnpoke{ 
+        visibility:hidden;
+    }
+    .btnpoke:before{
+        visibility:visible;
+        content: "Pokemon" !important;
+        font-size: small !important;
+        background-color: darkorange !important;
+    }
+
+    .btnrym{
+        visibility:hidden;
+    }
+
+    .btnrym:before{
+        visibility:visible;
+        content: "R y M" !important;
+        font-size: small !important;
+        background-color:rgb(13, 110, 253);
+    }
+
+} */
