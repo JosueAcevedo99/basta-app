@@ -1,4 +1,4 @@
-let letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","Ñ","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+let letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","R","S","T","U","V","Y","Z"];
 
 let categorias = ["CIUDAD O PAIS","OBJETO ESCOLAR","COLOR","SABOR","FLOR FRUTO VEGETAL", "ANIMAL",
                   "MARCA", "COMIDA", "CELEBRIDAD", "PELICULA", "CANCION", "PRENDA", "PROGRAMA DE TV",
@@ -10,7 +10,7 @@ const letraActual = document.getElementById('letra');
 var letranueva = letras[Math.floor(Math.random()*letras.length)];
 
 
-var intervalLetra = setInterval(ChangerLetras, 5000, letraActual);
+var intervalLetra = setInterval(ChangerLetras, 7000, letraActual);
 
 function ChangerLetras() {
     letraActual.innerHTML = letras[Math.floor(Math.random()*letras.length)];
@@ -20,7 +20,7 @@ const categoriaActual = document.getElementById('categoria');
 
 var categorianueva = categorias[Math.floor(Math.random()*categorias.length)];
 
-var intervalcategoria = setInterval(ChangerCategoria, 5000, categoriaActual);
+var intervalcategoria = setInterval(ChangerCategoria, 7000, categoriaActual);
 
 function ChangerCategoria() {
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
@@ -28,7 +28,7 @@ function ChangerCategoria() {
 
 const tiempoActual = document.getElementById('time');
 
-var limit = 4;
+var limit = 6;
 
 var intervalcategoria = setInterval(ChangerTiempo, 1000);
 
@@ -36,7 +36,7 @@ function ChangerTiempo() {
   
   tiempoActual.innerHTML = limit--;
 
-  limit < 0 ? limit = 4 : limit = limit--;
+  limit < 0 ? limit = 6 : limit = limit--;
 }
 
 
