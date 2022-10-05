@@ -1,9 +1,9 @@
-let letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","R","S","T","U","V","Y","Z"];
+let letras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","R","S","T","U","V","Z"];
 
 let categorias = ["CIUDAD O PAIS","OBJETO ESCOLAR","COLOR","SABOR","FLOR FRUTO VEGETAL", "ANIMAL",
                   "MARCA", "COMIDA", "CELEBRIDAD", "PELICULA", "CANCION", "PRENDA", "PROGRAMA DE TV",
-                   "OBJETO DE CAMPO", "OBJETO DE CIUDAD", "LIBRO", "PARTE DEL CUERPO", "PALABRA DE 4 LETRAS",
-                  "PALABRA DE 7 LETRAS", "ANIMAL DE 7 LETRAS", "ANIMAL DE 4 LETRAS" ];
+                   "OBJETO DE CAMPO", "OBJETO DE CIUDAD", "LIBRO", "PARTE DEL CUERPO",
+                   "ANIMAL TERRESTRE" ];
 
 const letraActual = document.getElementById('letra');
 
