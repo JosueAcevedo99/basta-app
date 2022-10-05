@@ -24,5 +24,17 @@ function ChangerCategoria() {
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
 }
 
+const tiempoActual = document.getElementById('time');
+
+var limit = 4;
+
+var intervalcategoria = setInterval(ChangerTiempo, 1000);
+
+function ChangerTiempo() {
+  
+  tiempoActual.innerHTML = limit--;
+
+  limit < 0 ? limit = 4 : limit = limit--;
+}
 
 
