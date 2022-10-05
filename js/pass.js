@@ -1,19 +1,31 @@
-let categorias = ["CIUDAD O PAIS","OBJETO ESCOLAR","COLOR","SABOR","FLOR FRUTO VEGETAL", "ANIMAL",
-                  "MARCA", "COMIDA", "CELEBRIDAD", "PELICULA", "CANCION", "PRENDA", "PROGRAMA DE TV",
-                   "OBJETO DE CAMPO", "OBJETO DE CIUDAD", "LIBRO", "PARTE DEL CUERPO",
-                   "ANIMAL TERRESTRE" ];
+let categorias = ["PERRO","GATO","LUNA","SOL","RATON", "ELEFANTE",
+                  "BOB ESPONJA", "ESTUFA", "MESA", "CUCHARA", "TENEDOR", "BUFANDA", "LENTES",
+                   "FOGATA", "TALADRO", "ROJO", "PLATANO", "MANZANA", "COCHE", "MICROFONO",
+                   "AUDIFONOS" 
+];
 
+var countWrong = 0;
+
+var countCorrect = 0;
 
 const categoriaActual = document.getElementById('pass');
 
 const btnCorrect = document.getElementById('correct');
 const btnWrong = document.getElementById('wrong');
 
+const correct = document.getElementById('countCorrect');
+
+const wrong = document.getElementById('countWrong');
+
+
 btnCorrect.onclick = () =>{
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
-
+  correct.innerHTML = countCorrect++;
+  countCorrect++;
 }
 
 btnWrong.onclick = () =>{
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
+  wrong.innerHTML = countWrong++;
+  countWrong = countWrong++;
 }
