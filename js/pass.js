@@ -31,6 +31,6 @@ btnWrong.onclick = () =>{
   countWrong = countWrong++;
 }
 
-btnPlay.onclick = () =>{
-  
-}
+// btnPlay.onclick = () =>{
+
+// }
