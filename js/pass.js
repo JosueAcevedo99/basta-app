@@ -45,8 +45,8 @@ const tiempoActual = document.getElementById('time');
 btnPlay.onclick = () =>{
   var timeWord = document.getElementById("minutos").value;
   var limit =  timeWord[0]+timeWord[1]+timeWord[2];
-  var segundero = limit *15;
-  limit = segundero*1000;//limit *1000 * 60;
+  var segundero = limit * 60;
+  limit = segundero *1000;
   categoriaActual.innerHTML =  categorias[Math.floor(Math.random()*categorias.length)];
 
   var correctas = "\n";
