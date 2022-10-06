@@ -13,13 +13,16 @@ let palabrasPartida = [];
 
 let categoriasPartida = [];
 
+const tiempoActual = document.getElementById('time');
+
 btnPlay.onclick = () =>{
+  ChangerLetras();
+  ChangerCategoria();
   var timePlay = document.getElementById("minutos").value;
   var limitPlay =  timePlay[0]+timePlay[1]+timePlay[2];
   limitPlay = limitPlay*1000*60;
   var timeWord = document.getElementById("segundos").value;
   var limit =  timeWord[0];
-  limitPlay = limitPlay+ (limit*1000);
   var intervaltiempo = setInterval(ChangerTiempo, 1000);
   var intervalPartida= setTimeout(ChangerEnd, limitPlay);
 
@@ -62,7 +65,7 @@ function ChangerCategoria() {
   categoriasPartida.push(categoriaNueva);
 }
 
-const tiempoActual = document.getElementById('time');
+
 
 
 

@@ -40,12 +40,13 @@ btnWrong.onclick = () =>{
   wrong.innerHTML = countWrong;
 }
 
+const tiempoActual = document.getElementById('time');
 
 btnPlay.onclick = () =>{
   var timeWord = document.getElementById("minutos").value;
   var limit =  timeWord[0]+timeWord[1]+timeWord[2];
+  var segundero = limit *60;
   limit = limit *1000 * 60;
-
   categoriaActual.innerHTML =  categorias[Math.floor(Math.random()*categorias.length)];
 
   var lista = "lista de palabras"
@@ -64,4 +65,18 @@ btnPlay.onclick = () =>{
     alert("Tiempo Fuera!! \n" + "\npuntaje : \n \n CORRECTAS : " +countCorrect+ correctas + "\n \n ERRORES : " +countWrong+ errores);
     location.reload();
   }
+
+  var intervaltiempo = setInterval(ChangerTiempo, 1000);
+
+  function ChangerTiempo() {
+  
+    tiempoActual.innerHTML = segundero--;
+    var contador = segundero;
+
+    if(contador < 0){
+      segundero = segundero ;
+    }  contador = contador - 1;
+  }
+  
+
 }
