@@ -35,11 +35,13 @@ function ChangerTiempo() {
   
   tiempoActual.innerHTML = limit--;
 
-  if(limit < 0){
+  if(limit <= 0){
     limit = timeWord[0] ;
     ChangerCategoria();
     ChangerLetras();
-  }  limit = limit--;
+  }else{
+    limit = limit--;
+  }  
 }
 
 
