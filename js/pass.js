@@ -12,6 +12,7 @@ const categoriaActual = document.getElementById('pass');
 
 const btnCorrect = document.getElementById('correct');
 const btnWrong = document.getElementById('wrong');
+const btnPlay = document.getElementById('play');
 
 const correct = document.getElementById('countCorrect');
 
