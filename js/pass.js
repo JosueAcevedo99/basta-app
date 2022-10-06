@@ -30,3 +30,7 @@ btnWrong.onclick = () =>{
   wrong.innerHTML = countWrong++;
   countWrong = countWrong++;
 }
+
+btnPlay.onclick = () =>{
+  
+}
