@@ -7,10 +7,30 @@ let categorias = ["CIUDAD O PAIS","OBJETO ESCOLAR","COLOR","SABOR","FLOR FRUTO V
 
 const letraActual = document.getElementById('letra');
 
-var letranueva = letras[Math.floor(Math.random()*letras.length)];
+const btnPlay = document.getElementById('play');
 
 
-var intervalLetra = setInterval(ChangerLetras, 7000, letraActual);
+
+btnPlay.onclick = () =>{
+  var timeWord = document.getElementById("segundos").value;
+  var limit =  timeWord[0];
+  var intervaltiempo = setInterval(ChangerTiempo, 1000);
+  
+function ChangerTiempo() {
+  
+  tiempoActual.innerHTML = limit--;
+
+  if(limit < 0){
+    limit = timeWord[0] ;
+    ChangerCategoria();
+    ChangerLetras();
+  }  limit = limit--;
+}
+
+
+}
+
+
 
 function ChangerLetras() {
     letraActual.innerHTML = letras[Math.floor(Math.random()*letras.length)];
@@ -20,7 +40,7 @@ const categoriaActual = document.getElementById('categoria');
 
 var categorianueva = categorias[Math.floor(Math.random()*categorias.length)];
 
-var intervalcategoria = setInterval(ChangerCategoria, 7000, categoriaActual);
+
 
 function ChangerCategoria() {
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
@@ -28,15 +48,6 @@ function ChangerCategoria() {
 
 const tiempoActual = document.getElementById('time');
 
-var limit = 6;
 
-var intervalcategoria = setInterval(ChangerTiempo, 1000);
-
-function ChangerTiempo() {
-  
-  tiempoActual.innerHTML = limit--;
-
-  limit < 0 ? limit = 6 : limit = limit--;
-}
 
 
