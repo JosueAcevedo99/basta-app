@@ -9,7 +9,9 @@ const letraActual = document.getElementById('letra');
 
 const btnPlay = document.getElementById('play');
 
+let palabrasPartida = [];
 
+let categoriasPartida = [];
 
 btnPlay.onclick = () =>{
   var timePlay = document.getElementById("minutos").value;
@@ -43,7 +45,9 @@ function ChangerTiempo() {
 
 
 function ChangerLetras() {
-    letraActual.innerHTML = letras[Math.floor(Math.random()*letras.length)];
+  var letraNueva =  letras[Math.floor(Math.random()*letras.length)];
+  letraActual.innerHTML = letraNueva;
+  categoriasPartida.push(letraNueva);
 }
 
 const categoriaActual = document.getElementById('categoria');
@@ -53,7 +57,9 @@ var categorianueva = categorias[Math.floor(Math.random()*categorias.length)];
 
 
 function ChangerCategoria() {
-  categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
+  var categoriaNueva =  categorias[Math.floor(Math.random()*categorias.length)];
+  categoriaActual.innerHTML = categoriaNueva;
+  categoriasPartida.push(categoriaNueva);
 }
 
 const tiempoActual = document.getElementById('time');
