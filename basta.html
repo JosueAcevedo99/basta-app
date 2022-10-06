@@ -43,12 +43,19 @@
         <!-- configuracion -->
         <!--========================================================== -->
         <section class="container justify-content-around d-flex mx-2 my-2 py-2">
-
-          <input id="inputTime" type="number" min="5" max="180" class="roundedcard fs-5 ps-3 w-50"  placeholder="seg x palabra">
+          <label class="fs-5 pt-1">Palabra</label>
+          <select name="inputTime" onChange="combo(this, 'demo')" class="roundedcard w-50" placeholder="sgfsdgf" >
+          <option>5 seg</option>
+          <option>6 seg</option>
+          <option>7 seg</option>
+          <option>8 seg</option>
+          <option>9 seg</option>
+          <option>10 seg</option>
+          </select>
           <button  id="play" type="button" class="btn btn-success roundedcard" >Jugar</button>
 
 
-      </section>
+        </section>
 
 
         <!--========================================================== -->
