@@ -46,7 +46,7 @@ btnPlay.onclick = () =>{
   var timeWord = document.getElementById("minutos").value;
   var limit =  timeWord[0]+timeWord[1]+timeWord[2];
   var segundero = limit * 60;
-  limit = segundero *1000;
+  limit = limit *1000 * 60;
   categoriaActual.innerHTML =  categorias[Math.floor(Math.random()*categorias.length)];
 
   var correctas = "\n";
@@ -62,7 +62,9 @@ btnPlay.onclick = () =>{
     tiempoActual.innerHTML = contador-1;
     if(contador >= 0){
       contador = contador - 1;
-    }  
+    }else{
+      location.reload();
+    } 
   }
 
 
