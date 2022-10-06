@@ -12,9 +12,18 @@ const btnPlay = document.getElementById('play');
 
 
 btnPlay.onclick = () =>{
+  var timePlay = document.getElementById("minutos").value;
+  var limitPlay =  timePlay[0]+timePlay[1]+timePlay[2];
+  limitPlay = limitPlay *3000 *10;
   var timeWord = document.getElementById("segundos").value;
   var limit =  timeWord[0];
   var intervaltiempo = setInterval(ChangerTiempo, 1000);
+  var intervalPartida= setTimeout(ChangerEnd, limitPlay);
+
+  function ChangerEnd() {
+    alert("tiempo fuera!! " );
+    location.reload();
+  }
   
 function ChangerTiempo() {
   

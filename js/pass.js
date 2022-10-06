@@ -22,7 +22,7 @@ const wrong = document.getElementById('countWrong');
 btnCorrect.onclick = () =>{
   categoriaActual.innerHTML = categorias[Math.floor(Math.random()*categorias.length)];
   correct.innerHTML = countCorrect++;
-  countCorrect++;
+  countCorrect = countCorrect++;
 }
 
 btnWrong.onclick = () =>{
@@ -31,6 +31,14 @@ btnWrong.onclick = () =>{
   countWrong = countWrong++;
 }
 
-// btnPlay.onclick = () =>{
 
-// }
+btnPlay.onclick = () =>{
+  var timeWord = document.getElementById("minutos").value;
+  var limit =  timeWord[0]+timeWord[1]+timeWord[2];
+  limit = limit *1000 * 60;
+  var intervaltiempo = setTimeout(ChangerTiempo, limit);
+  function ChangerTiempo() {
+    alert("tiempo fuera!! " + "\n puntaje : " + (countCorrect - countWrong));
+    location.reload();
+  }
+}
