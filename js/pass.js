@@ -1,7 +1,20 @@
 let categorias = ["PERRO","GATO","LUNA","SOL","RATON", "ELEFANTE",
                   "BOB ESPONJA", "ESTUFA", "MESA", "CUCHARA", "TENEDOR", "BUFANDA", "LENTES",
                    "FOGATA", "TALADRO", "ROJO", "PLATANO", "MANZANA", "COCHE", "MICROFONO",
-                   "AUDIFONOS" 
+                   "AUDIFONOS", "LAPTOP", "PLATO", "SILLA", "CARTERA", "MOCHILA", "VENTANA",
+                   "PUERTA", "CEREAL", "TECHO", "SUPERMAN", "CHANCLAS", "CELULAR", "CHAMARRA",
+                   "CABELLO", "JABON", "ESCOBA", "ENCHUFE", "LAPIZ", "LAPICERO", "TIJERAS",
+                   "PEGAMENTO", "GOMA", "CUBREBOCAS", "FOCO", "ARBOL", "SEMILLA", "HAMACA",
+                   "MAR", "PLAYA", "SELVA", "FELIZ", "ENOJADO", "SOLIDO", "LIQUIDO",
+                   "AGUA", "FUEGO", "TIERRA", "AIRE", "PAJARO", "CONEJO", "VACA",
+                   "POLLO", "CERDO", "BOTELLA", "PERFUME", "GANCHO", "BANCO", "CUBO",
+                   "CIRCULO", "PELOTA", "RAQUETA", "CARTA", "DINERO", "HULK", "LIBRO",
+                   "DIADEMA", "WI-FI", "LLUVIA", "CLIP", "GRAPA", "SERVILLETA", "MANTEL", "RUEDA",
+                   "CAJA", "CIRCO", "PIZARRON", "NUBE", "MONTAÑA", "RIO", "OSO", "ARCO", "CUERDA",
+                   "CARGADOR", "AÑO", "DIA", "NOCHE", "PRESIDENTE", "FUTBOL", "BASKETBOL", "MUNDO",
+                   "TERREMOTO", "TORNADO", "TIBURON", "PULPO", "CANDADO","MICROONDAS","IGLESIA","COMPUTADORA",
+                   "TELE","CONTROL","CUCHILLO","BOCINA","PULCERA","COLLAR","ARETES",
+                   "DULCE","SALADO",""
 ];
 
 var countWrong = 0;
@@ -24,7 +37,7 @@ let categoriasPartidaCorrectas = [];
 let categoriasPartidaErrores = [];
 
 btnCorrect.onclick = () =>{
-  var categoriaNueva =  categorias[Math.floor(Math.random()*categorias.length)];
+  var categoriaNueva =  categorias[Math.floor(Math.random()*categorias.length)];FFFFFFFFFFFFFFFFFFF
   categoriaActual.innerHTML = categoriaNueva;
   categoriasPartidaCorrectas.push(categoriaNueva);
   countCorrect = countCorrect + 1;
