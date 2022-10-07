@@ -37,7 +37,7 @@ let categoriasPartidaCorrectas = [];
 let categoriasPartidaErrores = [];
 
 btnCorrect.onclick = () =>{
-  var categoriaNueva =  categorias[Math.floor(Math.random()*categorias.length)];FFFFFFFFFFFFFFFFFFF
+  var categoriaNueva =  categorias[Math.floor(Math.random()*categorias.length)];
   categoriaActual.innerHTML = categoriaNueva;
   categoriasPartidaCorrectas.push(categoriaNueva);
   countCorrect = countCorrect + 1;
