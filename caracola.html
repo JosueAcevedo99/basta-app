@@ -30,41 +30,62 @@
 
 
         <div class="d-flex bg-dark justify-content-around ">
-            <p class="pt-2 ps-2 text-white "> Juegos </p>
-
+          <a class="btn text-white" href="index.html" >Inicio</a>
+          <p class="pt-2 ps-2 text-white ">Caracola Mágica</p>
         </div>
 
+
+
+
+        <!--========================================================== -->
+        <!-- Juego -->
+        <!--========================================================== -->
 
         <section class="container w-100 border-top border-3" id="equipo">
 
                     <div class="row mx-3 mb-2">
 
-                  
-                        <div class=" col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center mt-4 me-2">
 
-                          <a class="btn text-success fs-1 w-100" href="basta.html">Basta</i></a>
+
+                      <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mt-3 icono-wrap">
+                     
+                        <div class="border border-3 roundedcard mb-4 text-center w-50 me-2">
+
+                          <a class="btn text-primary tamanio-3 w-100" id="wrong"><i class="bi bi-suit-club-fill"></i></a>
+
+                        </div>
+                        
+                        <div class="border border-3 roundedcard mb-4 text-center w-50 me-2">
+
+                          <a class="btn text-dark tamanio-3 w-100" id="correct"><i class="bi bi-suit-diamond-fill"></i></a>
 
                         </div>
 
-                        <div class="col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center">
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mt-3 icono-wrap">
+                     
+                        <div class="border border-3 roundedcard mb-4 text-center w-50 me-2">
 
-                          <a class="btn text-primary fs-1 w-100" href="password.html">Password</i></a>
-
-                        </div>
-                  
-                  
-                        <div class="col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center">
-
-                          <a class="btn text-danger fs-1 w-100" href="caracola.html">Caracola Mágica</i></a>
+                          <a class="btn text-danger tamanio-3 w-100" id="wrong2"><i class="bi bi-suit-heart-fill"></i></a>
 
                         </div>
+                        
+                        <div class="border border-3 roundedcard mb-4 text-center w-50 me-2">
+
+                          <a class="btn text-success tamanio-3 w-100" id="correct2"><i class="bi bi-suit-spade-fill"></i></a>
+
+                        </div>
+
+                      </div>
 
 
                     </div>
         </section>
                 
 
-
+        <!--========================================================== -->
+        <!-- Footer -->
+        <!--========================================================== -->
         <footer class="w-100  d-flex bg-dark text-white align-items-center justify-content-center fixed-bottom">
             <p class="fs-6 px-3  pt-3">Josué Acevedo.</p>
             <div id="iconos" >
@@ -74,6 +95,8 @@
             </div>
         </footer>
             
+
+        <script type="text/javascript" src="js/caracola.js"></script>
 
     </body>
 </html>

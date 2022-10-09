@@ -14,7 +14,7 @@ let categorias = ["PERRO","GATO","LUNA","SOL","RATON", "ELEFANTE",
                    "CARGADOR", "AÑO", "DIA", "NOCHE", "PRESIDENTE", "FUTBOL", "BASKETBOL", "MUNDO",
                    "TERREMOTO", "TORNADO", "TIBURON", "PULPO", "CANDADO","MICROONDAS","IGLESIA","COMPUTADORA",
                    "TELE","CONTROL","CUCHILLO","BOCINA","PULCERA","COLLAR","ARETES",
-                   "DULCE","SALADO",""
+                   "DULCE","SALADO"
 ];
 
 var countWrong = 0;
