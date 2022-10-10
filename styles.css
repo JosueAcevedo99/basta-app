@@ -2,13 +2,14 @@
 
 .marker {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
 }
 
 .wheel {
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
