@@ -1,15 +1,10 @@
-#app {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  position: relative;
-}
+
 
 .marker {
   position: absolute;
   width: 60px;
-  left: 172px;
-  top: -20px;
+  left: 180px;
+  top: 50px;
   z-index: 2;
 }
 
@@ -24,7 +19,7 @@
 }
 
 .blur {
-  animation: blur 10s;
+  animation: blur 8s;
 }
 
 @keyframes blur {
