@@ -2,9 +2,10 @@
 
 .marker {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 60px;
+  left: 175px;
+  top: 50px;
+  z-index: 2;
 }
 
 .wheel {
