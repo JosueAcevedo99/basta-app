@@ -15,6 +15,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     
     <title> Basta App</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -30,44 +31,23 @@
 
 
         <div class="d-flex bg-dark justify-content-around ">
-            <p class="pt-2 ps-2 text-white "> Juegos </p>
-
+          <a class="btn text-white" href="index.html" >Inicio</a>
+          <p class="pt-2 ps-2 text-white ">Ruleta</p>
         </div>
 
+    <div class="container">
+      <div id="app" class="mt-4">
+        <img class="marker" src="marker.png" />
+        <img class="wheel" src="wheel.png" />
+        <div class="border border-3 roundedcard mb-4 text-center bg-success mt-3">
+          <a class="btn button fw-bold text-white tamanio-3 w-100" id="correct">Jugar</a>
+        </div>      
+      </div>
+    </div>
 
-        <section class="container w-100 border-top border-3" id="equipo">
-
-                    <div class="row mx-3 mb-2">
-
-                  
-                        <div class=" col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center mt-4 me-2">
-
-                          <a class="btn text-success fs-1 w-100" href="basta.html">Basta</i></a>
-
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center">
-
-                          <a class="btn text-primary fs-1 w-100" href="password.html">Password</i></a>
-
-                        </div>
-                  
-                  
-                        <div class="col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center">
-
-                          <a class="btn text-danger fs-1 w-100" href="caracola.html">Caracola Mágica</i></a>
-
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 border border-3 roundedcard mb-4 text-center">
-
-                          <a class="btn text-info fs-1 w-100" href="ruleta.html">Ruleta</i></a>
-
-                        </div>
-
-
-                    </div>
-        </section>
+        
+    
+        <script src="script.js"></script>
                 
 
 
