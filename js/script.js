@@ -11,7 +11,7 @@
     // Calculate a new rotation between 5000 and 10 000
     deg = Math.floor(4000 + Math.random() * 4000);
     // Set the transition on the wheel
-    wheel.style.transition = 'all 10s ease-out';
+    wheel.style.transition = 'all 6s ease-out';
     // Rotate the wheel
     wheel.style.transform = `rotate(${deg}deg)`;
     // Apply the blur
