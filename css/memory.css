@@ -71,6 +71,24 @@ position:absolute;top:50%;margin-top:-50px;width:100%;text-align:center}
 .card.active .flipper, .b {transform:rotateY(180deg);-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-ms-transform:rotateY(180deg);-o-transform:rotateY(180deg)}
 .logo .f, .card .b::before, .pause::before{-webkit-text-stroke: 1px #fff} /*webkit only*/
 
+.fss{
+	font-size: xx-large;
+}
+
+.color1{
+	background-color: #019f56 !important;
+}
+
+
+.color2{
+	background-color: #cb5f00 !important;
+}
+
+.color3{
+	background-color: #9c0000 !important;
+}
+
+
 /*Responsive Stuff*/
 @media all and (max-width: 1680px) and (min-width: 640px){
 	.card .b::before{font-size:90px}
