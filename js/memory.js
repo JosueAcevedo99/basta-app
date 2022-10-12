@@ -1,5 +1,8 @@
 $(function(){
   
+  const btnUpdate = document.getElementById('inicio');
+
+
    
   
     function shuffle(array) {
@@ -37,7 +40,8 @@ $(function(){
   
     // Start game
     $('.play').on('click', function(){
-     
+      btnUpdate.innerHTML = "";
+
           $('.info').fadeOut();
   
       var difficulty = '',
