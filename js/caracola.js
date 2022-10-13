@@ -20,36 +20,36 @@ const btnWrong4 = document.getElementById('wrong4');
 
 btnCorrect.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();
+ 
 }
 
 btnWrong.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();
+ 
 }
 btnCorrect2.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();  
+   
 }
 btnWrong2.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();
+ 
 }
 btnCorrect3.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();  
+   
 }
 btnWrong3.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();
+ 
 }
 btnCorrect4.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();  
+   
 }
 btnWrong4.onclick = () =>{
   alert(categorias[Math.floor(Math.random()*categorias.length)]);
-  location.reload();
+ 
 }
 
 
