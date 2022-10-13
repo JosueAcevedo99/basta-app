@@ -14,7 +14,7 @@
     if (bot === null) {
       location.reload();
    } else {
-    location.href = 'https://wa.me/+52'+res+'?text=Te%20Recuerdo%20que%20traeras%20*'+bot+'*%20la%20siguiente%20*reunion*%20*Gracias*';
+    window.open('https://wa.me/+52'+res+'?text=Te%20Recuerdo%20que%20traeras%20*'+bot+'*%20la%20siguiente%20*reunion*%20*Gracias*', '_blank');
    }}
   });
 
