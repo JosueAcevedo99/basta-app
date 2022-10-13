@@ -15,7 +15,8 @@
       location.reload();
    } else {
     window.open('https://wa.me/+52'+res+'?text=Te%20Recuerdo%20que%20traeras%20*'+bot+'*%20la%20siguiente%20*reunion*%20*Gracias*', '_blank');
-   }}
+    setTimeout(location.reload(), 2000);
+  }}
   });
 
 
